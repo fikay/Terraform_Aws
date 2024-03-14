@@ -145,7 +145,7 @@ resource "aws_network_interface" "makinates-NI" {
 resource "aws_eip" "Ec2" {
   # domain                    = "vpc"
   # network_interface         = aws_network_interface.makinates-NI.id
-  vpc = true
+  # vpc = true
   //instance = aws_instance.web.id
   network_interface = aws_network_interface.makinates-NI.id
   depends_on = [ aws_internet_gateway.Igw ]
